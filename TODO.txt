@@ -33,8 +33,6 @@
 8) add README
 
 *** Bugs ***
-1) get rid of #removeButton undefined error ( prevents render without dpad use )
-
 2) characters that don't represent mathematical symbols are treated as variables
    a) ex. 'asdf' is parsed and drawn as x^4
    b) if more than one variable is specified, an error message should be shown to describe the limitations of the system
@@ -42,3 +40,6 @@
 3) d-pad use leads to background lattice getting out-of-synch with function display
 
 4) seem to recall that zoom occasionally lead to float errors in scale
+
+  // closed
+  1) get rid of #removeButton undefined error ( prevents render without dpad use )

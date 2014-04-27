@@ -311,7 +311,7 @@ function RhtFunctionPlottingEvents() {
             var color = plotting.colors.readNext();
             plotting.bury_function( mathString, color, plotType, $("#functionDict").children().size()  );
             var n = $("#functionDict").children().size();
-            $("#removeButton" +(n-1) ).live('click', function() {
+            $("#removeButton" +(n-1) ).on('click', function() {
                                                 $("#storedPlotData" + (n-1)).remove();
                                                 plotting.redraw();
                                             });
