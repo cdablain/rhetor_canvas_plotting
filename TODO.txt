@@ -1,6 +1,5 @@
 *** Tech debt ***
 1) translate files into amd modules
-2) figure out where the hell I put the unit tests
 3) translate unit tests to use new modules
 4) css selectors should be MUCH more specific
 5) replace most ids with classes
@@ -20,6 +19,12 @@
 18) consider using less arcane method names in r_function_plot ( not a neal stephenson character )
 19) consider using localStorage for input functions, rather than dom
 20) cache/widgetize input access ( super dumb to be traversing the dom every time )
+21) fix deprecated methods in unit tests
+22) programmatically create links in test index.html to support new directory convention
+23) programmatically import test.js, remove individual test.htmls in directorys, update title based on import
+
+  // closed
+  2) figure out where the hell I put the unit tests
 
 *** Improvements ***
 1) introduce mouse drag to dpad
