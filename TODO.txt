@@ -1,0 +1,44 @@
+*** Tech debt ***
+1) translate files into amd modules
+2) figure out where the hell I put the unit tests
+3) translate unit tests to use new modules
+4) css selectors should be MUCH more specific
+5) replace most ids with classes
+6) replace most r_lang methods with underscore
+   a) Still prefer r_lang's version of map, but should be refactored to use the arguments keyword
+7) impose a convention to deal with javascript variable hoisting
+8) use js switch statement in case of large number of if statements (ex. r_expression 'is_multiplication_implied')
+9) re-enable function removal
+10) seem to recall that expression to reverse-polish translation occured on every paint, this is obv. inefficient
+11) remove vestiges of jquery-ui html and css ( display was initially a draggable punch-out )
+12) doesn't look like there was a good convention for managing lexical scope
+13) use more semantic html ( and convert to real html5 )
+14) get rid of linter errors
+15) use underscore where appropriate
+16) remove hard-coded text within html
+17) remove hard coded styling arguments from within js ( r_function_plot.js )
+18) consider using less arcane method names in r_function_plot ( not a neal stephenson character )
+19) consider using localStorage for input functions, rather than dom
+20) cache/widgetize input access ( super dumb to be traversing the dom every time )
+
+*** Improvements ***
+1) introduce mouse drag to dpad
+2) add max zoom levels to prevent insane levels of computation
+3) add tooltips to inputs
+4) fill out expression classification to allow for more efficient function rendering
+5) add support for latex style input and display ( look into using mathjax again )
+   a) Would seriously simplify parsing
+6) run profiler
+7) add sample expressions to demonstrate use
+8) add README
+
+*** Bugs ***
+1) get rid of #removeButton undefined error ( prevents render without dpad use )
+
+2) characters that don't represent mathematical symbols are treated as variables
+   a) ex. 'asdf' is parsed and drawn as x^4
+   b) if more than one variable is specified, an error message should be shown to describe the limitations of the system
+
+3) d-pad use leads to background lattice getting out-of-synch with function display
+
+4) seem to recall that zoom occasionally lead to float errors in scale

@@ -1,0 +1,278 @@
+/* function plot css
+   author cad
+   12/07/10 */
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.hidden {
+    display: none;
+}
+#rhtLessonFunctionPlotting {
+    text-align:center;
+}
+/* Editing */
+#functionPlotProblems {
+    font-size: 13px;
+}
+.rhtPlotFunctions {
+    display:inline-block;
+    border: 1px solid black;
+    width: 48%;
+    padding: 3px;
+    float:left;
+}
+.rhtPlotPoints {
+    display:inline-block;
+    border: 1px solid grey;
+    padding: 3px;
+    width: 48%;
+    float:right;
+}
+.rhtPlotXLabel {
+    margin-top: 10px;
+    border: 1px solid grey;
+}
+.rhtPlotYLabel {
+    margin-top: 10px;
+    border: 1px solid grey;
+}
+.rhtPlotCorrectResponses {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#rhtFunctionPlottingToolbar {
+    text-align:center;
+    padding-top: 5px;
+}
+
+#plottingPanel{ display:block; width: 700px; }
+
+#canvas {
+    display:inline-block;
+    border: 1px dotted black;
+    background-color: white;
+}
+#editCanvas {
+    display:inline-block;
+    border: 1px dotted black;
+    background-color: white;
+}
+
+#plottingTable{
+    font-family:sans-serif;
+}
+/************ function input ************/
+#function {
+   display:inline-block;
+   width: 250px;
+   font-size: 16px;
+   margin-right: 5px;
+   border: 1px dotted black;
+}
+.functionLabel{
+   display:inline-block;
+   width: 50px;
+   font-weight:bold;
+   font-size: 16px;
+   margin-right: 10px;
+   font-family:monospace;
+}
+.functionInput{
+    text-align:center;
+    width: 90%;
+    padding-top: 15px;
+    font-family:sans-serif;
+    margin-bottom: 10px;
+}
+#rhtExpressionFeedback {
+    width: 600px;
+    color:red;
+    text-align:center;
+    min-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/****** point labeling ****/
+#rhtPointEditing{
+    margin-top: 10px;
+    text-align:center;
+}
+#pointLabelBar {
+    width: 420px;
+}
+#toLabelX{
+    border: 1px solid #555555;
+    width: 3em;
+}
+#toLabelY{
+    border: 1px solid #555555;
+    width: 3em;
+}
+#rhtPointLabelInput {
+    border: 1px solid #555555;
+}
+/****** domain and range *****/
+#xleft{
+    display:inline-block;
+    font-size: 12px;
+    text-align:center;
+    width: 3em;
+    vertical-align: top;
+    margin-top: 210px;
+}
+#xright{
+    display:inline-block;
+    text-align:center;
+    font-size: 12px;
+    width: 3em;
+    vertical-align: top;
+    margin-top: 210px;
+}
+#ytop{
+    text-align:center;
+    width: 4em;
+    font-size: 12px;
+}
+#ybottom{
+    text-align:center;
+    width: 4em;
+    font-size: 12px;
+}
+
+.verticalPanel{
+    display:inline-block; //background-color:orange;
+}
+/* FUNCTION HISTORY */
+#rhtPlottingHistory{
+//    height: 730px;
+//   background-color:red;
+}
+#functionDict{
+   font-size:12px;
+   font-family:sans-serif;
+   width: 175px;
+   margin-top: 10px;
+   margin-bottom: 15px;
+   background-color:#dddddd;
+}
+#pointDict {
+    font-size:12px;
+    font-family:sans-serif;
+    width: 175px;
+    background-color:#dddddd;
+}
+.rhtStoredExpression{
+    display:inline-block;
+    width:70%;
+    padding-left: 5px;
+}
+li {  list-style:none; }
+
+.rhtStoredPointLabel {
+    display:inline-block;
+    margin-left: 10px;
+}
+.rhtStoredColor{  display:none; }
+
+#plotNavigation{
+    text-align:center;
+    margin-top: 10px;
+}
+.rhtPlotType{ display:none; }
+
+.removeButton{
+    display:inline-block;
+    font-size: 12px;
+}
+/* CONTROLS */
+#plottingControlPanel{
+    text-align:center;
+    width: 450px;
+}
+
+/* D-PAD */
+.plotCommands {
+    display:inline-block;
+    background-color: #dddddd;
+    width: 150px;
+    border: 1px dotted black;
+    margin-right: 10px;
+}
+.dPad {
+    display:inline-block;
+    text-align:center;
+    background-color: #dddddd;
+    width:120px;
+    border: 1px dotted black;
+}
+.zoomPad {
+    display:inline-block;
+    background-color: #dddddd;
+    width: 120px;
+    border: 1px dotted black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 10px;
+    vertical-align:top;
+}
+#leftRightButtons{
+    display:block;
+}
+#moveUpButton{ display:inline-block; }
+#moveDownButton{ display:inline-block; }
+
+
+/* User display */
+#rhtFPUserPrompt{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align:center;
+}
+
+#rhtFPUserAnswer{
+    margin-left: 80px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#rhtFPFeedback{
+    text-align:center;
+    min-height:1.2em;
+}
+/************** editing panel **************/
+.rhtPlotAxisLabels {
+    text-align:center;
+    margin-top: 10px;
+    padding-bottom:5px;
+}
+.rhtCorrectAnswers{
+    text-align:center;
+    margin-top:10px;
+    width: 250px;
+}
+.rhtCorrectAnswerSet{
+    margin-top: 5px;
+}
+.rhtCorrectResponseDeleteLabel {
+    display:inline-block;
+    font-size: 12px;
+}
+.rhtPlotTextPrompt {
+    text-align:center;
+    margin-top: 10px;
+}
+#rhtFunctionPlotTextPromptInput {
+    border: 1px solid grey;
+}
+.rhtButtonContainer{
+    padding-top:10px;
+    text-align:center;
+}
+#xright{
+    width: 1em;
+    //background-color:red;
+}

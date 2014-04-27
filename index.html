@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script data-main="./js/main" src="./external_deps/require.js"></script>
+  </head>
+  <body>
+    <div id=rhtLessonFunctionPlotting class='rhtShowLessonComponent shadow center'>
+      <div class=rhtMoveHandle>function plotting</div>
+      <div class='rhtLessonPanelBottom ui-widget-content'>
+	<div class=rhtLessonPanelContent>
+	  <div id=xleft></div>
+	  <div class='verticalPanel center'>
+	    <div id=ytop class=center></div>
+	    <canvas id=canvas width=400 height=400> "_" </canvas>
+	    <div id=ybottom class=center></div>
+	  </div>
+	  <div id=xright></div>
+	  <div class='functionInput center'>
+	    <div class='functionLabel center'>f(x)= </div>
+	    <input id=function type=text></input>
+	    <button id=functionPlotButton>plot line</button>
+	  </div>
+	  <div id=rhtExpressionFeedback class='center hidden'></div>
+	  <!-- toolbar -->
+	  <div id=rhtFunctionPlottingToolbar>
+	    <button id=rhtTogglePointEditing>edit points</button>
+	    <button id=rhtToggleFunctionHistory>see functions</button>
+	    <button id=rhtTogglePointHistory>see points</button>
+	    <button id=rhtToggleNavigationControls>navigate</button>
+	  </div>
+	  <!-- point editing -->
+	  <div id=rhtPointEditing class=center>
+	    x: <input id=toLabelX></input>
+	    y: <input id=toLabelY></input>
+	    label: <input id=rhtPointLabelInput></input>
+	    <button id=rhtDisplayPointButton>display</button>
+	  </div>
+	  <!-- plot navigation -->
+	  <div id=plotNavigation class=center>
+	    <div class=dPad>
+	      <button id=moveUpButton class=center>up</button>
+	      <div id=leftRightButtons>
+		<button id=moveLeftButton>left</button>
+		<button id=moveRightButton>right</button>
+	      </div>
+	      <button id=moveDownButton class=center>down</button>
+	    </div>
+	    <div class=zoomPad>
+	      <button id=zoomInButton>zoom in</button>
+	      <button id=zoomOutButton>zoom out</button>
+	    </div>
+	  </div>
+	  <!-- function history -->
+	  <div id=rhtPlottingHistory class=center>
+	    <div id=functionDict class=center></div>
+	    <div id=pointDict class=center></div>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </body>
+</html>
